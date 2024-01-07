@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Scheme Generator</title>
+  </head>
+  <body>
+    <div class="control-panel">
+      <input type="color" id="selected-color" />
+      <div class="custom-select">
+        <select name="color-scheme-options" id="color-scheme">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+        </select>
+      </div>
+      <button id="get-scheme-btn">Get color scheme</button>
+    </div>
+    <div class="schemes-container">
+      <div class="color-container">
+        <div class="scheme" id="scheme-1"></div>
+        <p id="hex-1">#6495ed</p>
+      </div>
+      <div class="color-container">
+        <div class="scheme" id="scheme-2"></div>
+        <p id="hex-2">#00ffff</p>
+      </div>
+      <div class="color-container">
+        <div class="scheme" id="scheme-3"></div>
+        <p id="hex-3">#7fffd4</p>
+      </div>
+      <div class="color-container">
+        <div class="scheme" id="scheme-4"></div>
+        <p id="hex-4">#ffe4c4</p>
+      </div>
+      <div class="color-container">
+        <div class="scheme" id="scheme-5"></div>
+        <p id="hex-5">#ffc0cb</p>
+      </div>
+    </div>
+
+    <div class="copy-text" id="copy-text">Hex copied!</div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
